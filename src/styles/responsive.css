@@ -1,0 +1,179 @@
+/* Estilos Responsivos */
+
+/* Desktop primeiro (acima de 1200px) */
+@media (max-width: 1200px) {
+    .about-container,
+    .home-content {
+        max-width: 90%;
+        padding: 0 var(--spacing-md);
+    }
+}
+
+/* Tablets e telas menores */
+@media (max-width: 768px) {
+    /* Header/Nav */
+    header {
+        padding: var(--spacing-sm);
+    }
+
+    nav ul {
+        gap: var(--spacing-md);
+        font-size: 0.9rem;
+    }
+
+    /* Home Section */
+    .home-section {
+        padding: var(--spacing-xl) var(--spacing-sm);
+        min-height: auto;
+        padding-top: 100px;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+    }
+
+    .home-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* About Section */
+    .about-section {
+        padding: var(--spacing-xl) var(--spacing-sm);
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .personal-info {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-tags {
+        justify-content: center;
+    }
+
+    .skill-tag {
+        font-size: 0.8rem;
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .education-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    /* Header/Nav */
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-sm);
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    /* Home Section */
+    .home-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-text p {
+        font-size: 0.9rem;
+    }
+
+    /* About Section */
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .skill-category {
+        text-align: center;
+    }
+
+    .skill-tags {
+        justify-content: center;
+    }
+
+    .skill-tag {
+        width: calc(50% - var(--spacing-sm));
+        text-align: center;
+    }
+}
+
+/* Para telas muito pequenas */
+@media (max-width: 320px) {
+    .skill-tag {
+        width: 100%;
+    }
+
+    .home-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.9rem;
+    }
+}
+
+/* Ajustes para telas muito grandes */
+@media (min-width: 1600px) {
+    .about-container,
+    .home-content {
+        max-width: 1400px;
+    }
+
+    .home-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+/* Ajustes para orientação paisagem em dispositivos móveis */
+@media (max-height: 500px) and (orientation: landscape) {
+    .home-section {
+        min-height: auto;
+        padding: var(--spacing-xl) var(--spacing-sm);
+    }
+
+    .profile-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .home-text h1 {
+        font-size: 1.5rem;
+    }
+} 
